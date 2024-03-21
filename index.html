@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Portfolio with Terminal Theme</title>
+<style>
+/* Terminal Theme CSS */
+body {
+  background-color: #212121;
+  color: #c7c7c7;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.terminal {
+  border-radius: 5px;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.terminal-header {
+  background-color: #444;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+}
+
+.terminal-body {
+  padding: 10px 0;
+}
+
+.terminal-line {
+  padding: 5px 10px;
+}
+
+.terminal-line:before {
+  content: "$";
+  color: #6be237;
+  margin-right: 5px;
+}
+
+.terminal-line.command:before {
+  content: "";
+}
+
+.terminal-line.command:after {
+  content: "_";
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="terminal">
+  <div class="terminal-header">Terminal</div>
+  <div class="terminal-body">
+    <div class="terminal-line">Welcome to My GitHub Portfolio!</div>
+    <div class="terminal-line">Type 'help' or '?' for available commands.</div>
+    <!-- Ad
